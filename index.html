@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project XI</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="TicTacToe.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="TicTacToe.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark col-md-8 mx-auto" style="background-color:#930c0c;">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="index.html">Project XI</a>
+          
+        </div>
+    </nav>
+</div>
+
+<!-- Add stuff here -->
+<div class="container container-fluid md-8 py-2 my-4 mx-auto border border-dark text-center">Tic Tac Toe!</div>
+
+<div class="container container-fluid sm-4 py-2 my-4 mx-auto text-center" id="turn">Click on a square to begin</div>
+
+<div class="container container-fluid py-4 mx-auto" id="main">
+
+  <div class="box" style="border-left: 0; border-top: 0" id="box1"> </div>
+  <div class="box" style="border-top: 0" id="box2"></div>
+  <div class="box" style="border-top: 0; border-right: 0" id="box3"></div>
+  <div class="box" style="border-left: 0" id="box4"></div>
+  <div class="box" id="box5"></div>
+  <div class="box" style="border-right: 0" id="box6"></div>
+  <div class="box" style="border-left: 0; border-bottom: 0" id="box7"></div>
+  <div class="box" style="border-bottom: 0" id="box8"></div>
+  <div class="box" style="border-right: 0; border-bottom: 0" id="box9"></div>
+
+</div>
+
+<div class="container-fluid mx-auto">
+ <button type="button" class="btn btn-dark" id="resetButton">Play Again</button>
+</div>
+
+ <script src="TicTacToe.js"></script>
