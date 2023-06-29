@@ -26,52 +26,53 @@ const resetButton = document.getElementById("resetButton");
 // Maybe this would be better as a switch?
 function checkWinStatus(){
                 
-    if (turn == 9 && winner == null) {
-        document.getElementById("turn").innerHTML = (`Cat's Game!`); 
-        } else {
+
 
     if (turn >=5) {
-        if (box1.innerHTML !=="" && box1.innerHTML == box2.innerHTML && box2.innerHTML == box3.innerHTML){
-            let winner = box1.innerHTML;
+        if (box1.innerHTML !=="" && box1.innerHTML === box2.innerHTML && box2.innerHTML === box3.innerHTML){
+             winner = box1.innerHTML;
             document.getElementById("turn").innerHTML = (`${winner } wins!`);
             console.log(winner);
-            box9.removeEventListener("click", function(){});
         }
-        if (box4.innerHTML !=="" && box4.innerHTML == box5.innerHTML && box5.innerHTML == box6.innerHTML){
-            let winner = box4.innerHTML;
+        if (box4.innerHTML !=="" && box4.innerHTML === box5.innerHTML && box5.innerHTML === box6.innerHTML){
+             winner = box4.innerHTML;
             document.getElementById("turn").innerHTML = (`${winner} wins!`);
             console.log(winner);
         }
-        if (box7.innerHTML !=="" && box7.innerHTML == box8.innerHTML && box8.innerHTML == box9.innerHTML){
-            let winner = box7.innerHTML;
+        if (box7.innerHTML !=="" && box7.innerHTML === box8.innerHTML && box8.innerHTML === box9.innerHTML){
+             winner = box7.innerHTML;
             document.getElementById("turn").innerHTML = (`${winner} wins!`);
             console.log(winner);
         }
-        if (box1.innerHTML !=="" && box1.innerHTML == box4.innerHTML && box4.innerHTML == box7.innerHTML){
-            let winner = box1.innerHTML;
+        if (box1.innerHTML !=="" && box1.innerHTML === box4.innerHTML && box4.innerHTML === box7.innerHTML){
+             winner = box1.innerHTML;
             document.getElementById("turn").innerHTML = (`${winner} wins!`);
             console.log(winner); 
         }
-        if (box2.innerHTML !=="" && box2.innerHTML == box5.innerHTML && box5.innerHTML == box8.innerHTML){
-            let winner = box2.innerHTML;
+        if (box2.innerHTML !=="" && box2.innerHTML === box5.innerHTML && box5.innerHTML === box8.innerHTML){
+             winner = box2.innerHTML;
             document.getElementById("turn").innerHTML = (`${winner} wins!`);
             console.log(winner); 
         }
-        if (box3.innerHTML !=="" && box3.innerHTML == box6.innerHTML && box6.innerHTML == box9.innerHTML){
-            let winner = box3.innerHTML;
+        if (box3.innerHTML !=="" && box3.innerHTML === box6.innerHTML && box6.innerHTML === box9.innerHTML){
+             winner = box3.innerHTML;
             document.getElementById("turn").innerHTML = (`${winner} wins!`);
             console.log(winner); 
         }
-        if (box7.innerHTML !=="" && box7.innerHTML == box5.innerHTML && box5.innerHTML == box3.innerHTML){
-            let winner = box7.innerHTML;
+        if (box7.innerHTML !=="" && box7.innerHTML === box5.innerHTML && box5.innerHTML === box3.innerHTML){
+             winner = box7.innerHTML;
             document.getElementById("turn").innerHTML = (`${winner} wins!`);
             console.log(winner); 
         }
-        if (box1.innerHTML !=="" && box1.innerHTML == box5.innerHTML && box5.innerHTML == box9.innerHTML){
-            let winner = box1.innerHTML;
+        if (box1.innerHTML !=="" && box1.innerHTML === box5.innerHTML && box5.innerHTML === box9.innerHTML){
+             winner = box1.innerHTML;
             document.getElementById("turn").innerHTML = (`${winner} wins!`);
             console.log(winner); 
 
+        } else {
+            if (turn === 9 && winner === null) {
+                document.getElementById("turn").innerHTML = (`Cat's Game!`); 
+                } else {
         }  
     } 
 }
