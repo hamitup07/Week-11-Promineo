@@ -1,9 +1,12 @@
 // Add event listeners for each box to listen for click.
-// Need way to track turns
+// Need a way to track turns
 // Can't click on a box more than once
 // Cange to X or O on x or o turn
 // Check for win state
 // Refresh game.
+
+
+// Variable Declarations:
 
 let turn = 0
 let winner = null
@@ -20,7 +23,7 @@ const box9 = document.getElementById("box9");
 
 const resetButton = document.getElementById("resetButton");
 
-// make this a switch:
+// Maybe this would be better as a switch?
 function checkWinStatus(){
                 
     if (turn == 9 && winner == null) {
@@ -74,6 +77,7 @@ function checkWinStatus(){
 }
 }
 
+//User input (buttons)
 resetButton.addEventListener('click', function() {
     box1.innerHTML = "";
     box2.innerHTML = "";
@@ -267,44 +271,5 @@ box9.addEventListener('click', function() {
     checkWinStatus();
 }
 )
-
-
-// class Game {
-//     constructor () {
-//         let turn = "X";
-//     }
-
-//     resetGame() {
-
-//         let turn = "X";
-
-//     }
-
-//     switchTurn() {
-//         if (turn = "X") {
-//             let turn = "O";
-//         } else if (turn = "O") {
-//             let turn = "X";
-//         }
-//     }
-
-//     gameOver() {
-
-//     }
-
-//     detectWinner() {
-
-//     }
-
-// }
-
-// class Box {
-//     constructor () {
-
-//     }
-
-
-// }
-
 
 
